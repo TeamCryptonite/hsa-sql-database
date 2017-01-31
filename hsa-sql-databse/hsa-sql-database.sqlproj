@@ -65,5 +65,8 @@
     <Build Include="ReimbursementReceipts.sql" />
     <Build Include="Store.sql" />
     <Build Include="User.sql" />
+    <Build Include="LineItem.sql" />
+    <Build Include="Product.sql" />
+    <Build Include="StoreProducts.sql" />
   </ItemGroup>
 </Project>
