@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "hsa-sql-databse", "hsa-sql-databse\hsa-sql-databse.sqlproj", "{EE4F8C87-8960-4012-90C7-379531C33E10}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "hsa-sql-database", "hsa-sql-databse\hsa-sql-database.sqlproj", "{EE4F8C87-8960-4012-90C7-379531C33E10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
