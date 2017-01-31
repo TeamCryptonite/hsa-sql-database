@@ -69,4 +69,10 @@
     <Build Include="Product.sql" />
     <Build Include="StoreProducts.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hsa-sql-database.publish.xml" />
+  </ItemGroup>
 </Project>

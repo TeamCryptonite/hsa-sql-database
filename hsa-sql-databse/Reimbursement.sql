@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Reimbursement]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[AccountId] INT NOT NULL,
 	[IsReimbursed] BIT NOT NULL DEFAULT 0,
 	[DateTime] DATETIME NOT NULL,
