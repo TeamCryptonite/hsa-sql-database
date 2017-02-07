@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[LineItem]
 (
-	[Id] INT NOT NULL PRIMARY KEY,
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
 	[ReceiptId] INT NOT NULL,
 	[ProductId] INT NOT NULL,
 	[Price] DEC(18,2) NOT NULL,

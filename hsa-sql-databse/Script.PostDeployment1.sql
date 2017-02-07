@@ -13,12 +13,12 @@ Post-Deployment Script Template
 print 'Inserting seed data'
 
 INSERT INTO dbo.[Product] (Name, Description, IsHSA) VALUES
-	("Water Bottle", "A Bottle for holding water", 0),
-	("Tylinol", "A headache cure", 1);
+	('Water Bottle', 'A Bottle for holding water', 0),
+	('Tylinol', 'A headache cure', 1);
 
 INSERT INTO dbo.[Store] (Name, Location) VALUES
-	("Wally World", geography::Point(38.951705, -92.334072, 4326)),
-	("HighCee", geography::Point(61.218056, -149.900278, 4326));
+	('Wally World', geography::Point(38.951705, -92.334072, 4326)),
+	('HighCee', geography::Point(61.218056, -149.900278, 4326));
 
 INSERT INTO dbo.[StoreProducts] (ProductId, StoreId) VALUES
 	(1, 1),
