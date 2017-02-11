@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Account]
+﻿CREATE TABLE [dbo].[Accounts]
 (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[AccountNum] INT NOT NULL,

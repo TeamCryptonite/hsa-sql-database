@@ -12,11 +12,11 @@ Post-Deployment Script Template
 
 print 'Inserting seed data'
 
-INSERT INTO dbo.[Product] (Name, Description, IsHSA) VALUES
+INSERT INTO dbo.[Products] (Name, Description, IsHSA) VALUES
 	('Water Bottle', 'A Bottle for holding water', 0),
 	('Tylinol', 'A headache cure', 1);
 
-INSERT INTO dbo.[Store] (Name, Location) VALUES
+INSERT INTO dbo.[Stores] (Name, Location) VALUES
 	('Wally World', geography::Point(38.951705, -92.334072, 4326)),
 	('HighCee', geography::Point(61.218056, -149.900278, 4326));
 
@@ -25,14 +25,14 @@ INSERT INTO dbo.[StoreProducts] (ProductId, StoreId) VALUES
 	(2, 1), 
 	(2, 2);
 
-INSERT INTO dbo.[User] (Username, Password, FirstName, LastName, PrefName) VALUES
+INSERT INTO dbo.[Users] (Username, Password, FirstName, LastName, PrefName) VALUES
 	('phutson', 'testpass', 'Pearse', 'Hutson', 'Pearse'),
 	('soccermom86', '12345', 'Cynthia', 'Smith', 'Cindy');
 
-INSERT INTO dbo.[Receipt] (StoreId, UserId, IsScanned) VALUES
+INSERT INTO dbo.[Receipts] (StoreId, UserId, IsScanned) VALUES
 	(1, 1, 0), 
 	(2, 2, 0);
 
-INSERT INTO dbo.[LineItem] (ProductId, ReceiptId, Price, Quantity) VALUES
+INSERT INTO dbo.[LineItems] (ProductId, ReceiptId, Price, Quantity) VALUES
 	(1, 1, 15.98, 1), 
 	(2, 1, 3.00, 3);

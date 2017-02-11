@@ -59,14 +59,14 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Receipt.sql" />
-    <Build Include="Account.sql" />
-    <Build Include="Reimbursement.sql" />
+    <Build Include="Receipts.sql" />
+    <Build Include="Accounts.sql" />
+    <Build Include="Reimbursements.sql" />
     <Build Include="ReimbursementReceipts.sql" />
-    <Build Include="Store.sql" />
-    <Build Include="User.sql" />
-    <Build Include="LineItem.sql" />
-    <Build Include="Product.sql" />
+    <Build Include="Stores.sql" />
+    <Build Include="Users.sql" />
+    <Build Include="LineItems.sql" />
+    <Build Include="Products.sql" />
     <Build Include="StoreProducts.sql" />
   </ItemGroup>
   <ItemGroup>

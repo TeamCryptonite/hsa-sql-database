@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Store]
+﻿CREATE TABLE [dbo].[Stores]
 (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Location] [sys].[geography],

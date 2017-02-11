@@ -10,24 +10,24 @@
 --------------------------------------------------------------------------------------
 */
 
-IF OBJECT_ID('dbo.[Account]', 'U') IS NOT NULL
-	DROP TABLE dbo.[Account]; 
-IF OBJECT_ID('dbo.[LineItem]', 'U') IS NOT NULL
-	DROP TABLE dbo.[LineItem]; 
-IF OBJECT_ID('dbo.[Product]', 'U') IS NOT NULL
-	DROP TABLE dbo.[Product]; 
-IF OBJECT_ID('dbo.[Receipt]', 'U') IS NOT NULL
-	DROP TABLE dbo.[Receipt]; 
-IF OBJECT_ID('dbo.[Reimbursement]', 'U') IS NOT NULL
-	DROP TABLE dbo.[Reimbursement];
+IF OBJECT_ID('dbo.[Accounts]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Accounts]; 
+IF OBJECT_ID('dbo.[LineItems]', 'U') IS NOT NULL
+	DROP TABLE dbo.[LineItems]; 
+IF OBJECT_ID('dbo.[Products]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Products]; 
+IF OBJECT_ID('dbo.[Receipts]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Receipts]; 
+IF OBJECT_ID('dbo.[Reimbursements]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Reimbursements];
 IF OBJECT_ID('dbo.[ReimbursementReceipts]', 'U') IS NOT NULL
 	DROP TABLE dbo.[ReimbursementReceipts]; 
-IF OBJECT_ID('dbo.[Store]', 'U') IS NOT NULL
-	DROP TABLE dbo.[Store]; 
+IF OBJECT_ID('dbo.[Stores]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Stores]; 
 IF OBJECT_ID('dbo.[StoreProducts]', 'U') IS NOT NULL
 	DROP TABLE dbo.[StoreProducts]; 
-IF OBJECT_ID('dbo.[User]', 'U') IS NOT NULL
-	DROP TABLE dbo.[User];
+IF OBJECT_ID('dbo.[Users]', 'U') IS NOT NULL
+	DROP TABLE dbo.[Users];
 
 --DROP TABLE IF EXISTS dbo.[Account]; 
 --DROP TABLE IF EXISTS dbo.[LineItem]; 

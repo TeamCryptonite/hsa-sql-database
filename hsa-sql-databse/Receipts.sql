@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Receipt]
+﻿CREATE TABLE [dbo].[Receipts]
 (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[UserId] INT,
