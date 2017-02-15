@@ -1,6 +1,8 @@
 ﻿CREATE TABLE [dbo].[Accounts]
 (
 	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[UserId] INT NOT NULL,
 	[AccountNum] INT NOT NULL,
-	[IsActive] BIT DEFAULT 0 NOT NULL
+	[IsActive] BIT DEFAULT 0 NOT NULL,
+	CONSTRAINT [FK_Accounts_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([Id]) ON DELETE NO ACTION
 )

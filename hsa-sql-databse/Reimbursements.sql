@@ -5,6 +5,6 @@
 	[IsReimbursed] BIT NOT NULL DEFAULT 0,
 	[DateTime] DATETIME NOT NULL,
 	[Amount] DECIMAL(18, 2) NOT NULL,
-	CONSTRAINT [FK_dbo.Account_dbo.Account_Id] FOREIGN Key ([AccountId])
+	CONSTRAINT [FK_Account_Account_Id] FOREIGN Key ([AccountId])
 		REFERENCES [dbo].[Accounts] ([Id]) ON DELETE CASCADE
 )

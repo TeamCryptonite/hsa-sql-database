@@ -4,5 +4,6 @@
 	[UserId] INT,
 	[DateTime] DATETIME DEFAULT CURRENT_TIMESTAMP,
 	[IsScanned] BIT DEFAULT 0,
-	[StoreId] INT NOT NULL
+	[StoreId] INT NOT NULL,
+	CONSTRAINT [FK_Receipts_Users] FOREIGN KEY ([UserId]) REFERENCES [Users] ([Id]) ON DELETE CASCADE
 )
