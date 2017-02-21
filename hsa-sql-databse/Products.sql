@@ -3,5 +3,6 @@
 	[ProductId] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Name] VARCHAR(100) NOT NULL,
 	[Description] TEXT,
+	[ImageId] VARCHAR(MAX),
 	[IsHSA] BIT NOT NULL DEFAULT 0
 )

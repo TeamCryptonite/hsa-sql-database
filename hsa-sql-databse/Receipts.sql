@@ -5,5 +5,5 @@
 	[DateTime] DATETIME DEFAULT CURRENT_TIMESTAMP,
 	[IsScanned] BIT DEFAULT 0,
 	[StoreId] INT NOT NULL,
-	[PictureId] VARCHAR(MAX)
+	[ImageId] VARCHAR(MAX)
 )
