@@ -12,7 +12,7 @@ Post-Deployment Script Template
 
 print 'Inserting seed data'
 
-INSERT INTO dbo.[Products] (Name, Description, IsHSA) VALUES
+INSERT INTO dbo.[Products] (Name, Description, AlwaysHsa) VALUES
 	('Water Bottle', 'A Bottle for holding water', 0),
 	('Tylinol', 'A headache cure', 1);
 
