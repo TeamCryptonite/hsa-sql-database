@@ -31,6 +31,15 @@ INSERT INTO dbo.[StoreProducts] (StoreId, ProductId) VALUES
 	(3, 2), (3, 3), (3, 4), (3, 5),
 	(4, 1), (4, 4);
 
+INSERT INTO dbo.[ShoppingLists] (UserObjectId, Name, Description, DateTime) VALUES
+	('c85d417c-c7e6-4117-9d7a-27ae6f57f975', 'Groceries', 'Grocery list for today', GETDATE()),
+	('c85d417c-c7e6-4117-9d7a-27ae6f57f975', 'Grandmas Prescriptions', 'Dont forget to get these prescriptions for grandma.', GETDATE());
+
+INSERT INTO dbo.[ShoppingListItems] (ShoppingListId, ProductName, ProductId, Quantity, Checked) VALUES
+	(1, 'Bananas', 4, 3, 0), (1, 'Potatoes', null, 2, 0), (1, 'HotPockets', null, 5, 1),
+	(2, 'Med1', null, 1, 0), (2, 'Flonaise', 3, 1, 0), (2, 'Wheelchair', null, 1, 0);
+
+
 INSERT INTO dbo.[Users] (Username, Password, FirstName, LastName, PrefName) VALUES
 	('phutson', 'testpass', 'Pearse', 'Hutson', 'Pearse'),
 	('soccermom86', '12345', 'Cynthia', 'Smith', 'Cindy');
