@@ -4,6 +4,7 @@
 	[UserObjectId] UNIQUEIDENTIFIER,
 	[DateTime] DATETIME DEFAULT CURRENT_TIMESTAMP,
 	[IsScanned] BIT DEFAULT 0,
-	[StoreId] INT NOT NULL,
-	[ImageId] VARCHAR(MAX)
+	[StoreId] INT,
+	[ImageId] VARCHAR(MAX),
+	CONSTRAINT [FK_Receipts_Stores] FOREIGN KEY ([StoreId]) REFERENCES [Stores]([StoreId]) ON DELETE SET NULL
 )
