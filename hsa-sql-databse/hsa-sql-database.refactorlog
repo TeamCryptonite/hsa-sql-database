@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="7fa9e1ba-1074-4161-80cc-ce8748239770" ChangeDateTime="03/13/2017 22:39:03">
+    <Property Name="ElementName" Value="[dbo].[Users].[Username]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Users]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="UserObjectId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7774a959-eba8-4479-a4a9-083c3af78b3e" ChangeDateTime="03/13/2017 22:48:28">
+    <Property Name="ElementName" Value="[dbo].[Receipts].[UserObjectId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Receipts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="User" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c575bfb4-efec-4ab2-b8b1-64a90699a01f" ChangeDateTime="03/14/2017 15:50:57">
+    <Property Name="ElementName" Value="[dbo].[Receipts].[ImageId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Receipts]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ImageRef" />
+  </Operation>
+</Operations>

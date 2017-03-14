@@ -5,6 +5,8 @@
 	[DateTime] DATETIME DEFAULT CURRENT_TIMESTAMP,
 	[IsScanned] BIT DEFAULT 0,
 	[StoreId] INT,
-	[ImageId] VARCHAR(MAX),
-	CONSTRAINT [FK_Receipts_Stores] FOREIGN KEY ([StoreId]) REFERENCES [Stores]([StoreId]) ON DELETE SET NULL
+	[ImageRef] VARCHAR(MAX),
+	[OcrRef] VARCHAR(MAX) NULL, 
+    CONSTRAINT [FK_Receipts_Stores] FOREIGN KEY ([StoreId]) REFERENCES [Stores]([StoreId]) ON DELETE SET NULL,
+	CONSTRAINT [FK_Receipts_Users] FOREIGN KEY ([UserObjectId]) REFERENCES [Users]([UserObjectId]) ON DELETE SET NULL
 )
