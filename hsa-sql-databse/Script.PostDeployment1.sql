@@ -12,8 +12,8 @@ Post-Deployment Script Template
 
 print 'Inserting seed data'
 
-INSERT INTO dbo.[Users] (UserObjectId, IsActiveUser, IsEmployee) VALUES
-	('c85d417c-c7e6-4117-9d7a-27ae6f57f975', 1, 1);
+INSERT INTO dbo.[Users] (UserObjectId, IsActiveUser, IsEmployee, DisplayName, EmailAddress, GivenName, SurName) VALUES
+	('c85d417c-c7e6-4117-9d7a-27ae6f57f975', 1, 1, 'pah9qd', 'pah9qd@mail.missouri.edu', 'Pearse', 'Hutson');
 
 INSERT INTO dbo.[Products] (Name, Description, AlwaysHsa) VALUES
 	('Water Bottle', 'A Bottle for holding water', 0),
