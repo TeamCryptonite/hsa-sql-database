@@ -42,12 +42,7 @@ INSERT INTO dbo.[ShoppingListItems] (ShoppingListId, ProductName, ProductId, Qua
 	(1, 'Bananas', 4, 3, 0), (1, 'Potatoes', null, 2, 0), (1, 'HotPockets', null, 5, 1),
 	(2, 'Med1', null, 1, 0), (2, 'Flonaise', 3, 1, 0), (2, 'Wheelchair', null, 1, 0);
 
-
-INSERT INTO dbo.[Users] (Username, Password, FirstName, LastName, PrefName) VALUES
-	('phutson', 'testpass', 'Pearse', 'Hutson', 'Pearse'),
-	('soccermom86', '12345', 'Cynthia', 'Smith', 'Cindy');
-
-INSERT INTO dbo.[Receipts] (StoreId, DateTime, UserObjectId, ImageId, IsScanned) VALUES
+INSERT INTO dbo.[Receipts] (StoreId, DateTime, UserObjectId, ImageREf, IsScanned) VALUES
 	(4, '2016-05-02 08:58:13', 'c85d417c-c7e6-4117-9d7a-27ae6f57f975', '53627fc8bae14b45b55a84f324d9592crec.jpg', 0),
 	(2, '2017-02-10 18:27:20', 'c85d417c-c7e6-4117-9d7a-27ae6f57f975', null, 0),
 	(4, '2016-08-27 18:07:42', 'c85d417c-c7e6-4117-9d7a-27ae6f57f975', null, 1),
