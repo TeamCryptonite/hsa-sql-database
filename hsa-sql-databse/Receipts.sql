@@ -7,6 +7,8 @@
 	[StoreId] INT,
 	[ImageRef] VARCHAR(MAX),
 	[OcrRef] VARCHAR(MAX) NULL, 
+    [WaitingForOcr] BIT NOT NULL DEFAULT 0, 
+    [Provisional] BIT NOT NULL DEFAULT 0, 
     CONSTRAINT [FK_Receipts_Stores] FOREIGN KEY ([StoreId]) REFERENCES [Stores]([StoreId]) ON DELETE SET NULL,
 	CONSTRAINT [FK_Receipts_Users] FOREIGN KEY ([UserObjectId]) REFERENCES [Users]([UserObjectId]) ON DELETE SET NULL
 )
